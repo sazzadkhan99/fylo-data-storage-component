@@ -107,7 +107,7 @@ img.icon{
   -webkit-appearance: none;
   width: .8rem;
   height: .8rem;
-  background: #fff;
+  background: var(--white);
   border-radius: 50%;  
 }
 /* Firefox Track */
