@@ -71,17 +71,17 @@ img.icon{
   border-radius: .60rem;
   position: relative;
 }
-.storage-card .used-space{
+.progressbar{
+  width: 100%;
+  position: relative;
+}
+.used-space{
   color: var(--blue-200);
   margin-inline: .25rem;
   font-size: .80rem;
 }
-.storage-card p span{
+.used-space span{
   font-weight: bold;
-}
-.progressbar{
-  width: 100%;
-  position: relative;
 }
 .range{
   width: 100%;
