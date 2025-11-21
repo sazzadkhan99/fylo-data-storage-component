@@ -225,7 +225,6 @@ img.icon{
   right: 2.5rem;
   transform: none;
 }
-
 .white-card::after{
   content: '';
   position: absolute;
