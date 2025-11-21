@@ -97,6 +97,7 @@ img.icon{
   -webkit-appearance: none;
   background: transparent;
   margin-top: 1rem;
+  pointer-events: none;
 }
 
 /*Chrome / Edge / Safari Track */
@@ -117,7 +118,7 @@ img.icon{
   width: .8rem;
   height: .8rem;
   background: #fff;
-  border-radius: 50%;
+  border-radius: 50%;  
 }
 
 /* Firefox Track */
