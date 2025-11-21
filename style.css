@@ -29,7 +29,6 @@ img{
   height: auto;
   display: block;
 }
-
 body{
   background-color: var(--blue-950);
   background-image: url(images/bg-mobile.png);
@@ -39,7 +38,6 @@ body{
   font-family: var(--primaryFont); 
   place-content: center;
 }
-
 .container{
   display: flex;
   flex-direction: column;
@@ -47,38 +45,32 @@ body{
   gap: 1rem;
   padding: 1.5rem;
 }
-
 .icon-card{
   background-color: var(--blue-850);
   padding: 2.5rem;
   border-radius: .60rem 5rem .60rem .60rem;
 }
-
 .icon-area{
   display: flex;
   gap: 1rem;
   margin-top: 2rem;  
 }
-
 .icon{
   padding: .8rem;
   border-radius: .5rem;
   background-color: var(--blue-950);
 }
-
 img.icon{
   object-fit: contain;
   display: flex;
   justify-content: center;  
 }
-
 .storage-card{
   background-color: var(--blue-850);
   padding: 2.5rem;
   border-radius: .60rem;
   position: relative;
 }
-
 .storage-card .used-space{
   color: var(--blue-200);
   margin-inline: .25rem;
@@ -87,7 +79,6 @@ img.icon{
 .storage-card p span{
   font-weight: bold;
 }
-
 .progressbar{
   width: 100%;
   position: relative;
@@ -99,7 +90,6 @@ img.icon{
   margin-top: 1rem;
   pointer-events: none;
 }
-
 /*Chrome / Edge / Safari Track */
 .range::-webkit-slider-runnable-track{
   height: .85rem;
@@ -120,21 +110,18 @@ img.icon{
   background: #fff;
   border-radius: 50%;  
 }
-
 /* Firefox Track */
 .range::-moz-range-track{
   height: .85rem;
   border-radius: 1rem;
   background: var(--rangeBg-color);
 }
-
 /* Firefox Progress */
 .range::-moz-range-progress{
    height: .85rem;
   border-radius: 1rem;
   background: linear-gradient(to right, var(--progressbarLight), var(--progressbarDark)); 
 }
-
 /* Firefox Thumb */
 .range::-moz-range-thumb{
   width: .8rem;
@@ -143,8 +130,6 @@ img.icon{
   border-radius: 50%;
   border: none;
 }
-
-
 .range-text{
   display: flex;
   justify-content: space-between;
@@ -153,7 +138,6 @@ img.icon{
   margin-top: .25rem;
   margin-bottom: .5rem; 
 }
-
 .white-card{
   width: clamp(10rem, 35%, 20rem);
   background-color: var(--white);
@@ -166,22 +150,17 @@ img.icon{
   left: 50%;
   transform: translate(-50%);
 }
-
-
 .white-card h1{  
   color: var(--blue-950);
   font-weight: 800;
   font-size: 2.2rem;
 }
-
 .white-card p{
   color: var(--grayish-Blue);
   text-transform: uppercase;
   font-weight: 700;
   font-size: .80rem;
 }
-
-
 @media screen and (min-width: 64rem){
   body{
     background-color: var(--blue-950);
@@ -190,7 +169,6 @@ img.icon{
     background-repeat: no-repeat;
     background-position: bottom;
 }
-
 .container{
   display: flex;
   flex-direction: row;
@@ -204,20 +182,16 @@ img.icon{
   padding: 2.5rem;
    border-radius: .60rem 6rem .60rem .60rem;
 }
-
 .storage-card{
   flex-basis: 60%;
   padding: 2.5rem;
 }
-
 .storage-card .used-space{
   padding-inline: 0;
 }
-
 .range-text{
   margin-bottom: 0;
 }
-
 .white-card{
   border-radius: .75rem .75rem 0rem .75rem;
   bottom: 8rem;
@@ -235,3 +209,4 @@ img.icon{
   border-right: 0 solid transparent;
 }
 }
+
