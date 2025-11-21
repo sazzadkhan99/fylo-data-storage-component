@@ -99,6 +99,7 @@ img.icon{
   margin-top: 1rem;
 }
 
+/*Chrome / Edge / Safari Track */
 .range::-webkit-slider-runnable-track{
   height: .85rem;
   border-radius: 1rem;
@@ -110,7 +111,7 @@ img.icon{
     var(--rangeBg-color) 100%
   );
 }
-
+/*Chrome / Edge / Safari Thumb */
 .range::-webkit-slider-thumb{
   -webkit-appearance: none;
   width: .8rem;
@@ -118,6 +119,30 @@ img.icon{
   background: #fff;
   border-radius: 50%;
 }
+
+/* Firefox Track */
+.range::-moz-range-track{
+  height: .85rem;
+  border-radius: 1rem;
+  background: var(--rangeBg-color);
+}
+
+/* Firefox Progress */
+.range::-moz-range-progress{
+   height: .85rem;
+  border-radius: 1rem;
+  background: linear-gradient(to right, var(--progressbarLight), var(--progressbarDark)); 
+}
+
+/* Firefox Thumb */
+.range::-moz-range-thumb{
+  width: .8rem;
+  height: .8rem;
+  background: var(--white);
+  border-radius: 50%;
+  border: none;
+}
+
 
 .range-text{
   display: flex;
