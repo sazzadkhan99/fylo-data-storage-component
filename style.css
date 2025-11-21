@@ -139,7 +139,7 @@ img.icon{
   margin-bottom: .5rem; 
 }
 .white-card{
-  width: clamp(10rem, 35%, 20rem);
+  width: clamp(7rem, 35%, 20rem);
   background-color: var(--white);
   position: absolute;
   display: flex;
@@ -209,4 +209,5 @@ img.icon{
   border-right: 0 solid transparent;
 }
 }
+
 
