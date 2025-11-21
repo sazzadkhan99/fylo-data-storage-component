@@ -5,15 +5,14 @@
     --primaryFont: "Raleway", sans-serif;
 
     /*----Colors----*/
-    --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
     --blue-200: hsl(243, 100%, 93%);
     --grayish-Blue: hsl(229, 7%, 55%);
     --blue-850: hsl(228, 56%, 26%);
     --blue-950: hsl(229, 57%, 11%);
     --white: hsl(0, 0%, 100%);
     --rangeBg-color: hsl(227, 57%, 18%);
-    --progressbarDark: #fe5895;
-    --progressbarLight: #ff9794 ;
+    --progressbarDark:hsl(335, 100%, 65%);
+    --progressbarLight:hsl(6, 100%, 80%);
 }
 
 /*----Reset & Global Style----*/
@@ -89,65 +88,36 @@ img.icon{
   font-weight: bold;
 }
 
-input[type="range"] {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 1rem;
-  padding: .60rem .25rem;
-  border-radius: 1rem;
-  background-color: var(--rangeBg-color);
-  margin-top: 1rem;
-  position: relative;
-}
-
-input[type="range"]::-webkit-slider-runnable-track{
-  width: 81.5%;
-  height: .85rem;
-  background: linear-gradient(to right, #ff9794, #fe5895);
-  border-radius: 1rem;
-  position: absolute;
-}
-
-input[type="range"]::-webkit-slider-thumb{
-  -webkit-appearance: none;
-  appearance: none;
-  width: .8rem;
-  height: .8rem;
-  background-color: #fff;
-  border-radius: 50%;
-  position: relative;
-}
-
-/*
 .progressbar{
   width: 100%;
+  position: relative;
 }
-
-.progressbar-bg{
-  background-color: var(--rangeBg-color);
+.range{
   width: 100%;
-  height: .75rem;
-  padding: .55rem .20rem;
+  -webkit-appearance: none;
+  background: transparent;
+  margin-top: 1rem;
+}
+
+.range::-webkit-slider-runnable-track{
+  height: .85rem;
   border-radius: 1rem;
-  display: flex;
-  flex-direction: column;  justify-content: center;
-}
-.progressbar-fill{
-  background: linear-gradient(to right, #ff9794, #fe5895);
-  width: 81.5%;
-  border-radius: .75rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  background: linear-gradient(
+    to right,
+    var(--progressbarLight) 0%,
+    var(--progressbarDark) 81.5%,
+    var(--rangeBg-color) 81.5%,
+    var(--rangeBg-color) 100%
+  );
 }
 
-.circle{
-  background-color: var(--white);
-  width:.8rem;
-  height:.8rem;
+.range::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: .8rem;
+  height: .8rem;
+  background: #fff;
   border-radius: 50%;
-}*/
-
+}
 
 .range-text{
   display: flex;
@@ -159,7 +129,7 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 .white-card{
-  width: 52%;
+  width: clamp(10rem, 35%, 20rem);
   background-color: var(--white);
   position: absolute;
   display: flex;
@@ -223,7 +193,6 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 .white-card{
-  max-width: 35% ;
   border-radius: .75rem .75rem 0rem .75rem;
   bottom: 8rem;
   left: auto;
